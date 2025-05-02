@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request a Quote - WBS</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="javascript1.js"></script>  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">  
+
+</head>
+<body>
+  <header class="header-conainer"> 
+      <div class="logo-img">
+    <h1 class="logo-title">WBS</h1>     
+      <a href="main.html"><img src="images/wbs-log.jpg" alt="WBS-Logo" /></a>
+    </div>
+    <h1 class="quote">Request a Form</h1>
+    <button class="nav-toggle" id="navToggle">☰</button>
+  
+    <nav id="mainNav">
+      <ul>
+        <li><a href="main.html">Home</a></li>
+        <li><a href="index.html">Services</a></li>
+        <li><a href="quote.html">Request a Form</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="form-section">
+    <form id="quoteForm">
+      <h2>LOGIN</h2>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="service">Service Needed:</label>
+      <select id="service" name="service" required>
+        <option value="">--Select--</option>
+        <option>Computer Maintenance</option>
+        <option>Camera Installation</option>
+        <option>Network Installation</option>
+        <option>GPS Tracker Installation</option>
+        <option>Web Development</option>
+      </select>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <button  type="submit">Submit</button>
+      <button class="back" type="button" onclick="window.location.href='main.html'">Back</button>
+    </form>
+    <!-- the section in login -->
+    <h2>Request a Free Quote</h2>
+    <p>Please fill out the form above to receive your quote.</p>
+    <p>Our team will review your request and get back to you as soon as possible.</p>
+    <p>Thank you for considering WBS for your service needs!</p>
+  </section>
+  <footer>
+    <p>&copy; 2025 West Bridge System. All rights reserved.</p>
+  </footer>
+  
+</body>
+</html>
